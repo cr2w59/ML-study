@@ -1,0 +1,40 @@
+파이썬에서 mysql 계열 DB(MariaDB) 액세스
+
+- 모듈 : pymysql 사용 (https://github.com/PyMySQL/PyMySQL)
+
+  ```shell
+  conda install pymysql -y
+  ```
+
+  
+
+```python
+# db/__init__.py
+import pymysql
+
+def logBackup(na,tCode,oriTxt,tStc):
+    connection = pymysql.connect(host='localhost', 
+                            user='root', 
+                            password='12341234', 
+                            db='py_db',
+                            charset='utf8mb4',
+                            # sql은 수정 가능성 때문에 dictionary
+                            cursorclass=pymysql.cursors.DictCursor)
+    try:
+        with connection.cursor() as cursor:
+            sql = '''
+            INSERT INTO `py_db`.`tbl_trans_lang_log` 
+                (`oCode`, `tCode`, `oStr`, `tStc`) 
+            VALUES
+                (%s,%s,%s,%s);
+            '''
+            cursor.execute(sql,(na, tCode, oriTxt, tStc))
+        connection.commit()
+        print('로그 저장 완료')
+    except Exception as e:
+        print(e)
+    finally:
+        if connection:
+            connection.close()
+```
+
