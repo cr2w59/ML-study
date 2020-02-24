@@ -1,6 +1,6 @@
 # 퍼셉트론(Perceptron)
 
-<img src="C:\Users\admin\Documents\GitHub\pengsoo\dl\data\주석 2020-02-20 130252.png" style="zoom:120%;" />
+<img src="https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/%EC%A3%BC%EC%84%9D%202020-02-20%20130252.png?raw=true" style="zoom:110%;" />
 
 ## 개념
 
@@ -20,7 +20,7 @@ $$
 
 ## XOR 문제
 
-![](C:\Users\admin\Documents\GitHub\pengsoo\dl\data\주석 2020-02-20 125410.png)
+![](https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/%EC%A3%BC%EC%84%9D%202020-02-20%20125410.png?raw=true)
 
 - AND와 OR 게이트는 직선을 그어 1을 구분할 수 있지만 XOR의 경우에는 불가능함
 
@@ -28,13 +28,13 @@ $$
 
 - XOR문제를 해결한 개념이 **다층 퍼셉트론(Multilayer Perceptron)** 
   
-  <img src="C:\Users\admin\Documents\GitHub\pengsoo\dl\data\주석 2020-02-20 125411.png" style="zoom:50%;" />
+  <img src="https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/%EC%A3%BC%EC%84%9D%202020-02-20%20125411.png?raw=true" style="zoom:50%;" />
   
   - 2차 좌표 평면 자체에 변화를 주면 해결 가능 => **은닉층(Hidden Layer)**
   
     
   
-    <img src="C:\Users\admin\Documents\GitHub\pengsoo\dl\data\은닉층.png" style="zoom: 100%;" />
+    <img src="http://colah.github.io/posts/2015-09-NN-Types-FP/img/netvis.png" style="zoom: 100%;" />
   
   - 입력값을 놓고 파란색과 빨간색의 영역을 단순 직선으로 구분할 수 없음
   
@@ -53,7 +53,7 @@ $$
 
 ## 설계
 
-![](C:\Users\admin\Documents\GitHub\pengsoo\dl\data\주석 2020-02-20 125412.png)
+![](https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/%EC%A3%BC%EC%84%9D%202020-02-20%20125412.png?raw=true)
 
 1. `x`: 입력
 
@@ -186,6 +186,6 @@ if __name__=="__main__":
         print('입력값: ' + str(x) + ' 출력값: ' + str(y))
 ```
 
-![](C:\Users\admin\Documents\GitHub\pengsoo\dl\data\xor_output.png)
+![](https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/xor_output.png?raw=true)
 
 

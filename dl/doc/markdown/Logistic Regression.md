@@ -12,7 +12,7 @@
 | :---------: | :----: | :----: | :----: | :--: | :--: | :--: | :--: |
 |  합격 여부  | 불합격 | 불합격 | 불합격 | 합격 | 합격 | 합격 | 합격 |
 
-<img src="C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200215170058217.png" alt="image-20200215170058217" style="zoom: 50%;" />
+<img src="https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/image-20200215170058217.png?raw=true" style="zoom: 50%;" />
 
 
 
@@ -28,19 +28,19 @@ $$
 
 -  ***a*: 그래프의 경사도 (a와 경사도는 비례)**
 
-    ​	<img src="C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200215172412101.png" alt="image-20200215172412101" style="zoom: 67%;" />
+    ​	<img src="https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/image-20200215172412101.png?raw=true" alt="image-20200215172412101" style="zoom: 67%;" />
 
     - **a가 작아질수록 오차는 무한대로 커지지만, a가 커진다고 해서 오차가 없어지지는 않음**
 
-      <img src="C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200215173313016.png" alt="image-20200215173313016" style="zoom: 67%;" />
+      <img src="https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/image-20200215173313016.png?raw=True" alt="image-20200215173313016" style="zoom: 67%;" />
 
 -  ***b*: 그래프의 좌우 이동**
 
-    ​	<img src="C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200215172536094.png" alt="image-20200215172536094" style="zoom: 67%;" />
+    ​	<img src="https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/image-20200215172536094.png?raw=True" alt="image-20200215172536094" style="zoom: 67%;" />
 
     - **b가 너무 크거나 작을 경우 오차는 이차 함수 그래프와 유사한 형태로 나타남**
 
-      ![image-20200215173348988](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200215173348988.png)
+      ![](https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/image-20200215173348988.png?raw=true)
 
 ### 3. 오차 공식
 
@@ -49,7 +49,7 @@ $$
 
 ### 4. 로그 함수
 
-<img src="C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200215174101895.png" alt="image-20200215174101895" style="zoom:50%;" />
+<img src="https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/image-20200215174101895.png?raw=True" alt="image-20200215174101895" style="zoom:50%;" />
 
 - 파란선: 실제 값이 1일 때 `-log h`
 - 빨간선: 실제 값이 0일 때 `-log(1-h)`
@@ -142,7 +142,7 @@ with tf.Session() as sess:
       print('Epoch: %.f, loss=%.04f, 기울기 a=%.4f, 바이어스 b=%.4f' %(i, sess.run(loss), sess.run(a), sess.run(b))) 
 ```
 
-![image-20200217174044222](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200217174044222.png)
+![](https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/image-20200217174044222.png?raw=true)
 
 #### 여러 입력 값을 갖는 로지스틱 회귀
 
@@ -275,5 +275,5 @@ with tf.Session() as sess:
   print(f"합격 가능성: %5.2f%%" %(new_y*100))
 ```
 
-<img src="C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200219094749666.png" alt="image-20200219094749666" style="zoom:67%;" />
+<img src="https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/image-20200219094749666.png?raw=true" alt="image-20200219094749666" style="zoom:67%;" />
 

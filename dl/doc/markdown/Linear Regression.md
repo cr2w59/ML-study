@@ -219,7 +219,7 @@ print(f'rmse 최종값: ' + str(rmse_val(predict_result, y)))
 
 ### 1. 미분의 개념
 
-![image-20200215142225800](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200215142225800.png)
+![](https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/image-20200215142225800.png?raw=true)
 
 - x값이 아주 미세하게 움직일 때의 y 변화량을 구한 뒤, 이를 x의 변화량으로 나누는 과정
   * **순간 변화율**: a가 변화량이 0에 가까울 만큼 아주 미세하게 변화한 방향성
@@ -360,7 +360,7 @@ with tf.Session() as sess:
       print('Epoch: %.f, RMSE = %.04f, 기울기 a = %.4f, y절편 b = %.4f' %(step, sess.run(rmse), sess.run(a), sess.run(b)))
 ```
 
-![image-20200215155339729](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200215155339729.png)
+![image-20200215155339729](https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/image-20200215155339729.png?raw=true)
 
 
 
@@ -459,12 +459,12 @@ with tf.Session() as sess:
       print('Epoch: %.f, RMSE=%.04f, 기울기 a1=%.4f, 기울기 a2=%.4f, y절편 b=%.4f' %(step, sess.run(rmse), sess.run(a1), sess.run(a2), sess.run(b))) 
 ```
 
-![image-20200215161754724](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200215161754724.png)
+![image-20200215161754724](https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/image-20200215161754724.png?raw=true)
 
 #### 다중 선형 회귀를 그래프로 표현
 
 - 1차원 예측 직선을 3차원 '예측 평면'으로 표현
 - 새로운 독립 변수가 추가되면서 1차원 직선에서만 움직이던 예측 결과가 더 넓은 평면 범위 안에서 움직이게 되고, 좀 더 정밀한 예측을 할 수 있게 됨
 
-<img src="C:\Users\admin\Documents\GitHub\pengsoo\dl\data\다중선형회귀.png"  />
+![](https://github.com/cr2w59/pengsoo/blob/master/dl/doc/images/%EB%8B%A4%EC%A4%91%EC%84%A0%ED%98%95%ED%9A%8C%EA%B7%80.png?raw=true)
 
