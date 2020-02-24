@@ -237,3 +237,4 @@
      
      print('정확도: %.4f' % (model.evaluate(X, Y_encoded)[1]))
      ```
+
